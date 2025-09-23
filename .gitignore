@@ -108,3 +108,4 @@ public/
 .Ulysses*
 
 resources
+.hugo_build.lock
