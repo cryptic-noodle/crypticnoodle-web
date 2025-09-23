@@ -11,7 +11,7 @@ title = "CrypticNoodle"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "cyrypticnoodle's corner of the internet"
 copyright = "@ { year } crypticnoodle"
 
 [params.author]
