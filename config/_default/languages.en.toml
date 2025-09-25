@@ -12,7 +12,7 @@ title = "CrypticNoodle"
   logo = "img/logo.png"  
   # secondaryLogo = "img/secondary-logo.png"
   description = "cyrypticnoodle's corner of the internet"
-copyright = "@ { year } crypticnoodle"
+copyright = "© { year } crypticnoodle"
 
 [params.author]
   name = "Misab A R"
