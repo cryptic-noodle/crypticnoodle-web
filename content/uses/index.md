@@ -5,3 +5,4 @@ sharingLinks: false
 ---
 
 ## more to come! :face_with_peeking_eye:
+all the things i use...
