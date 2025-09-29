@@ -16,8 +16,8 @@ I’m passionate about `digital design`, `linux`, `foss`, `self-hosting`, `motor
 ### Hobbies?? 
 - 📚 `Reading`  
 - 🏎️ `Watching F1` *Max fan; cry about it.*
-- 🚴 `Cycling`  
-- 🚗 `Driving`  
+- 🚴 `Cycling`
+- 🚗 `Driving`
 - 🏃 `Running`
 - 🏓 `TT`
 - 🪛 `testing stuff?`
@@ -40,15 +40,6 @@ I try to self-host whatever I can, so shoutout to **[Immich](https://github.com/
 - I **break my system** at least once a month (*on purpose, of course*).<br>`i use arch, btw`
 - I really want an iFixit scredriwer set :slightly_frowning_face:
 
-### This Website
-I’ll be writing about the *various stupid stuff* I experiment with, so [**join along the journey**](/posts/)!  
-
-Leave a [comment!](/comment/), let everyone know you were here...
-
-This website was made with :heart: using [**Hugo**](https://github.com/gohugoio/hugo) & [**blowfish**](https://github.com/nunocoracao/blowfish).
-
-**Website Source Code:**
-{{< github repo="cryptic-noodle/crypticnoodle-web" showThumbnail=false >}}
 
 ## 📄 Resume  
 Get my resume [**from here**](/about/resume/).  
@@ -73,3 +64,15 @@ rC4/7x26j6+X2u4xso4A
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 Find the rest of my **socials** at the [**home page**](/). 
+
+## This Website
+Welcome to `my corner of the internet!`
+
+- I’ll be writing about the *various stupid stuff* I experiment with, so [**join along the journey**](/posts/)!  
+- See [what i use](/uses/) everyday...
+- Leave a [comment](/comment/)!, let everyone know you were here...
+
+This website was made with :heart: using [**Hugo**](https://github.com/gohugoio/hugo) & [**blowfish**](https://github.com/nunocoracao/blowfish).
+
+**Website Source Code:**
+{{< github repo="cryptic-noodle/crypticnoodle-web" showThumbnail=false >}}

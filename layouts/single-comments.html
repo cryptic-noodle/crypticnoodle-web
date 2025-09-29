@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <article class="max-w-full">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    <section class="max-w-full mt-6 prose dark:prose-invert">
+      {{ .Content }}
+    </section>
+    <!-- <footer class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </footer> -->
+    <footer class="pt-8 max-w-prose print:hidden">
+      {{ if .Params.showComments | default (site.Params.article.showComments | default false) }}
+        {{ if templates.Exists "partials/comments.html" }}
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+            <div class="pt-3">
+              {{ partial "comments.html" . }}
+            </div>  
+          </div>
+        {{ else }}
+          {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
+        {{ end }}
+      {{ end }}
+    </footer>
+  </article>
+{{ end }}

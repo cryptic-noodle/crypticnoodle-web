@@ -1,7 +1,10 @@
 ---
 title: "/comment"
-layout: "simple"
-sharingLinks: false
+layout: "single-comments"
+showComments:  true
 ---
+{{< lead >}}
+Leave a *Suggestion* or a *Thought* or a *Poem* or *whatever*...
+{{< /lead >}}
 
-## more to come! :face_with_peeking_eye:
+> or just let the world know `you were here`

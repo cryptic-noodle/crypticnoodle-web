@@ -2,4 +2,4 @@
 title: "/blog"
 ---
 
-## more to come! :face_with_peeking_eye:
+## well i'm writing it, have some patience! 🙄

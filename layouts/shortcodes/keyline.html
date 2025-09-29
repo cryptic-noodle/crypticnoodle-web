@@ -1,0 +1,7 @@
+{{ $icon := .Get "icon" }}
+<span class="inline-flex items-center align-middle rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-2 py-0.5 text-xs font-normal">
+  {{ if $icon }}
+    <span class="mr-1 flex items-center">{{ partial "icon" $icon }}</span>
+  {{ end }}
+  <span>{{- .Inner | markdownify -}}</span>
+</span>
