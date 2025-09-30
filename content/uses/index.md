@@ -10,9 +10,8 @@ tags: ["self-hosted", "FOSS", "software"]
 ---
 
 {{< lead >}}
-All the things i use... daily?
+[All the things I use... daily? ](https://uses.tech)
 {{< /lead >}}
-
 ## Software
 
 ### Cross-Platfrom 

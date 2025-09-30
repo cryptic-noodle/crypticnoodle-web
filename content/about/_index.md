@@ -31,7 +31,7 @@ I’m a *bit* paranoid about **security and privacy**.<br>
 
 I try to self-host whatever I can, so shoutout to **[Immich](https://github.com/immich-app/immich)** and **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** — I honestly couldn’t live without these amazing projects.  
 
-{{< button href="https://myvaultwarden.fly.dev" target="_self" >}}  
+{{< button href="https://myvaultwarden.fly.dev" target="_blank" >}}  
 🔥 Join my Vaultwarden instance!!  
 {{< /button >}}  
 
