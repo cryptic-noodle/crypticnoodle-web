@@ -25,7 +25,7 @@ And thus this website was born!!
 
 Yes it’s still a work in progress, but it was super easy to set up all thanks to the Hugo framework and the Blowfish theme, all I really need to do now is keep adding `content` :smiling_face_with_tear:
 
-There’s also an RSS feed for the blog that you can subscribe, to automatically get my future posts, using an rss reader ( if you're into that stuff :upside_down_face:)
+There’s also an RSS feed for the blog that you can subscribe, to automatically get my future posts, using an [rss reader](https://github.com/ReadYouApp/ReadYou) ( if you're into that stuff :upside_down_face:)
 
 ```md
 https://crypticnoodle.work/posts/index.xml

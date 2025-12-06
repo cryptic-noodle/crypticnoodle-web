@@ -6,6 +6,7 @@ showDate : false
 showPagination : false 
 showReadingTime : false
 showRelatedContent: false
+showComments:  false
 tags: ["self-hosted", "FOSS", "software"]
 ---
 
