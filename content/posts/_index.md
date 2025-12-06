@@ -2,4 +2,4 @@
 title: "/blog"
 ---
 
-## well i'm writing it, have some patience! 🙄
+{{< lead >}} My thoughts, *organized… ish* {{< /lead >}}
