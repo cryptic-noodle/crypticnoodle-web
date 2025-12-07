@@ -6,6 +6,8 @@ tags: ["Blog"]
 showHero: true
 date: 2025-12-07
 draft: false
+# images:
+#   - "social-og.jpg" # can be used to customize only the oembed photo
 # lastmod: "2025-12-06"
 ---
 
