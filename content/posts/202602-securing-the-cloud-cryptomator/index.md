@@ -3,9 +3,12 @@ title: "Securing the Cloud with Cryptomator"
 description: "Learn how to protect your cloud files with military-grade encryption using Cryptomator, the open-source tool that keeps your data private—even from cloud providers themselves."
 summary: "A comprehensive guide to using Cryptomator for transparent client-side encryption of your cloud storage. Keep your files secure with AES-256 encryption while maintaining seamless access across all your devices."
 tags: ["Blog", "Privacy", "Encryption", "Cloud", "Security", "Tutorial", "Open-Source"]
-date: 2026-02-01
-draft: true
+date: 2026-02-09
+# lastmod: "2025-12-06"
+draft: false
 showHero: true
+# images:
+#   - "social-og.jpg" # can be used to customize only the oembed photo
 ---
 
 In the current day and age where user data is currency and is harvested from wherever possible, securing your personal files and documents is of paramount importance. The files you upload to various cloud providers are often stored completely unencrypted and free for them to use for any purpose they wish—it truly isn't very secure. Even though many providers have privacy policies that are supposed to prevent this, it has been found time and again that they break these laws behind people's backs, and there are very clever loopholes that allow government agencies and other entities to access your data directly.
@@ -31,6 +34,10 @@ Here's why you should consider using Cryptomator:
 - **Cloud Provider Flexibility**: Works with Dropbox, Google Drive, OneDrive, MEGA, pCloud, ownCloud, Nextcloud and any other cloud storage service which synchronizes with a local directory. You're not locked into one ecosystem.
 
 - **No Subscription Traps**: Cryptomator follows a one-time purchase model with no recurring costs or hidden charges. The desktop version is completely free, and the mobile apps are reasonably priced (or, *ahem*, available through certain unofficial channels on Android 😉).
+
+{{< button href="#getting-started-with-cryptomator-a-step-by-step-guide" target="_self" >}}
+Go straight to the guide ⬇
+{{< /button >}}
 
 ## Key Features of Cryptomator
 
@@ -66,13 +73,13 @@ Here's how to get started with Cryptomator:
 
 ### 1. Installation
 
+![Cryptomator Download Page](<Screenshot 2026-02-02 154952.png>)
+
 Download and install the latest version of Cryptomator from [cryptomator.org](https://cryptomator.org/) for your operating system (Windows, macOS, Linux, Android, iOS).
 
-{{< alert "circle-info" >}}
-**Pricing Note**: The desktop version (Windows, macOS, Linux) is completely free. Starting January 1, 2026, the price of Cryptomator will be €29.99 for mobile apps, but there are frequent sales—the mobile apps are the only paid versions.
-{{< /alert >}}
+![Cryptomator Installation Wizard](<Screenshot 2026-02-02 155037.png>)
 
-*[Screenshot placeholder: Cryptomator download page]*
+Complete all the steps in the installation wizard to continue
 
 ### 2. Installing the Cloud Backend (Optional)
 
@@ -84,8 +91,6 @@ If you want to store your vault in the cloud, you'll first need to set up your c
 - **OneDrive**: Download and install the OneDrive app for Windows
 - **Dropbox**: Download and install the Dropbox app for Windows
 - **S3/B2**: Download and install [rclone](https://rclone.org/) and configure it to use your required provider, then mount it
-
-*[Screenshot placeholder: Cloud storage apps in Windows system tray]*
 
 #### macOS
 
@@ -101,7 +106,7 @@ If you want to store your vault in the cloud, you'll first need to set up your c
 At this point, you should be able to access the cloud storage as a normal folder or drive in your file manager.
 
 {{< alert "lightbulb" >}}
-**Pro Tip**: I'll be putting up a comprehensive guide on rclone shortly. It's an incredibly versatile tool that supports almost every cloud service provider and much more. It's basically the Swiss Army knife of cloud storage tools!
+**NOTE**: I'll be putting up a comprehensive guide on rclone shortly. It's an incredibly versatile tool that supports almost every cloud service provider and much more. It's basically the Swiss Army knife of cloud storage tools!
 {{< /alert >}}
 
 ### 3. Creating Your First Vault
@@ -110,27 +115,31 @@ Now for the fun part—creating your encrypted vault!
 
 1. **Launch Cryptomator**
 
-*[Screenshot placeholder: Cryptomator main window]*
+![Cryptomator Homepage](<Screenshot 2026-02-02 155135.png>)
 
 2. **Click the "+" button** and select **"Create New Vault"**
 
-*[Screenshot placeholder: Create vault dialog]*
+![Cryptomator + button](<Screenshot 2026-02-02 155214.png>)
 
-3. **Choose a name** for your vault and select the location where you want to store it. This should be inside your cloud storage folder (e.g., `C:\Users\YourName\Dropbox\My Vault` or `/Users/YourName/Google Drive/My Vault`).
+1. **Choose a name** for your vault and select the location where you want to store it. This should be inside your cloud storage folder (e.g., `C:\Users\YourName\Dropbox\My Vault` or `/Users/YourName/Google Drive/My Vault`).
+
+![Choose Name](<Screenshot 2026-02-02 155419.png>)
 
 {{< alert "triangle-exclamation" >}}
 **Important**: Make sure you place the vault inside the cloud storage folder that syncs automatically. That's the whole point—the encrypted files will sync to the cloud automatically!
 {{< /alert >}}
 
-*[Screenshot placeholder: Selecting vault location]*
+![Select Location](<Screenshot 2026-02-02 155814.png>)
 
 4. **Set a Strong Password**: This is crucial! Your vault is only as secure as your password. Use a long, unique password that you haven't used anywhere else. A password manager like Bitwarden (which I highly recommend) can help generate and store a super strong password.
 
-*[Screenshot placeholder: Password creation dialog]*
+![Set a Password](<Screenshot 2026-02-02 155859.png>)
 
 5. **Save Your Recovery Key**: Cryptomator will prompt you to create a recovery key. This is *extremely* important—store this recovery key securely in a separate location (e.g., password manager, printed copy in a safe). The recovery key allows you to regain access to your data if you forget your password or if vault config files get lost.
 
-*[Screenshot placeholder: Recovery key display]*
+![Recovery Key](<Screenshot 2026-02-02 155921.png>)
+
+**Now your Vault should have been created successfully!**
 
 {{< alert "fire" >}}
 **Critical**: Without your password AND recovery key, there is absolutely no way to recover your data. None. Zero. Zilch. The encryption is that good. So please, PLEASE, save that recovery key somewhere safe!
@@ -147,23 +156,32 @@ To access your encrypted files:
 3. Click "Unlock" and enter your password
 4. The vault will mount as a virtual drive
 
-*[Screenshot placeholder: Unlocked vault showing as drive]*
+![Vault Opening](<Screenshot 2026-02-02 155941.png>)
 
 Once unlocked, Cryptomator provides you with a virtual drive where your data is automatically encrypted—no extra steps required. The location varies by operating system (e.g., a new drive letter like `Z:` on Windows, a mounted folder on macOS/Linux).
+
+![Vault Opened](<Screenshot 2026-02-02 160012.png>)
+![Vault Drive Letter](<Screenshot 2026-02-02 160105 (Edited).png>)
 
 #### Adding Files
 
 Simply drag and drop files into the virtual drive, or work directly inside it using any application. Everything you save will be automatically encrypted in the background. It's that simple!
 
-*[Screenshot placeholder: Files being added to the vault drive]*
+![Files placed in vault](<Screenshot 2026-02-02 160821.png>)
 
 #### Locking the Vault
 
 When you're finished working with your encrypted files, simply click **"Lock"** in the Cryptomator interface to unmount the virtual drive and secure your vault. The encrypted files will automatically sync to your cloud storage in the background.
 
-*[Screenshot placeholder: Lock vault button]*
+![Vault Lock Button](<Screenshot 2026-02-02 160858.png>)
 
-### 5. Cryptomator on Mobile (Android and iOS)
+As you can see all the data stored on the cloud provider is completely encrypted and safe.
+
+![Google Drive vault pic](<Screenshot 2026-02-02 160736.png>)
+
+![Google drive actual encrypted file](<Screenshot 2026-02-02 160502.png>)
+
+### Cryptomator on Mobile (Android and iOS)
 
 Cryptomator offers mobile apps that allow you to access your encrypted data on the go. Note that these apps are paid (unlike the desktop version), but they're well worth it for the convenience.
 
@@ -171,8 +189,6 @@ Cryptomator offers mobile apps that allow you to access your encrypted data on t
 
 - **Android**: Download Cryptomator from the [Google Play Store](https://play.google.com/store/apps/details?id=org.cryptomator)
 - **iOS**: Download Cryptomator from the [Apple App Store](https://apps.apple.com/app/cryptomator/id1560822163)
-
-*[Screenshot placeholder: Mobile app interface]*
 
 {{< alert "wink" >}}
 **For Android users**: There might be ways to get Cryptomator through unofficial means like... *cough* Mobilism *cough*. Just saying. But hey, supporting the developers is always appreciated too!
@@ -185,8 +201,6 @@ Cryptomator offers mobile apps that allow you to access your encrypted data on t
 3. **Unlock Vault**: Enter your password (or use biometric authentication if you've set it up) to unlock the vault
 4. **Access Files**: Once unlocked, browse and access your encrypted files within the app
 5. **Automatic Synchronization**: Any changes you make to your files within the Cryptomator app will be automatically synchronized with your cloud storage
-
-*[Screenshot placeholder: Mobile app with unlocked vault]*
 
 ## Best Practices for Using Cryptomator
 
@@ -211,35 +225,13 @@ Store your recovery key in a safe and separate location, ideally offline. Option
 
 Losing your recovery key means losing access to your encrypted data forever if you forget your password. Don't let that happen!
 
-### 💾 Regular Backups
-
-Back up your Cryptomator vaults regularly. This protects you against:
-- Hardware failure
-- Accidental deletion
-- Cloud storage provider issues
-- Ransomware attacks (though your encrypted vault is already protected!)
-
-Consider backing up both the encrypted vault files AND the recovery key to different locations using the 3-2-1 backup rule: 3 copies, 2 different media types, 1 offsite.
-
 ### 🔄 Keep Cryptomator Updated
 
 Regularly update Cryptomator to the latest version to ensure you have the latest security patches and bug fixes. The team is constantly improving the software and adding new features.
 
-### ✅ Verify Cloud Synchronization
-
-After creating your vault or adding new files, verify that the synchronization process with your cloud storage has completed successfully. This prevents data loss or corruption if the sync is interrupted. Most cloud storage clients show a sync status icon—make sure it says "up to date" before relying on the cloud backup.
-
 ### 🔐 Enable Two-Factor Authentication (2FA)
 
 While Cryptomator handles encryption, enabling 2FA on your cloud storage account adds an extra layer of security, protecting your account from unauthorized access even if your password is compromised. This doesn't affect your vault's encryption, but it prevents attackers from deleting your encrypted files or locking you out of your account.
-
-### 🖥️ Be Mindful of Shared Devices
-
-If you use Cryptomator on a shared device:
-- Always lock the vault when you're done
-- Consider enabling "Auto-Lock" features in Cryptomator settings
-- Clear browser history and temporary files after each session
-- Don't save your vault password in the system keychain on shared computers
 
 ## Comparing Cryptomator with Other Encryption Tools
 
@@ -271,15 +263,6 @@ Want a real-world example of why client-side encryption matters? In May 2025, Oa
 The scary part? Applications could view and download sensitive content such as tax documents, project plans, or confidential meeting minutes without even using an exploit—they just had to use the File Picker "correctly" (or rather, incorrectly).
 
 If those files had been encrypted with Cryptomator? The attackers would have only gotten gibberish. That's the power of client-side encryption—even when cloud providers make mistakes, your data stays safe.
-
-## The Future of Cryptomator
-
-The Cryptomator team isn't resting on their laurels. Recent developments include:
-
-- **Cryptomator Hub**: A central platform for managing and sharing encrypted vaults for teams and organizations with centralized user management and role-based permissions
-- **Post-Quantum Cryptography**: The team is working on future-proofing the encryption against quantum computing threats
-- **Emergency Access**: An upcoming feature that allows designating a specific group of authorized persons who can restore access to a vault in an emergency
-- **Improved Collaboration**: Better support for collaborating on Office files with locking systems to prevent conflicts
 
 ## Conclusion
 
