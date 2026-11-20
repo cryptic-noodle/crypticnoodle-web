@@ -1,6 +1,7 @@
 ---
 title: "/comment"
-layout: "single-comments"
+layout: "simple"
+sharingLinks: false
 ---
 {{< lead >}}
 Leave a *Suggestion* or a *Thought* or a *Poem* or *whatever*...

@@ -4,8 +4,8 @@
 {{ $cardView := .Get "cardView" }}
 {{ $where := .Get "where" }}
 {{ $value := .Get "value" }}
+{{/* CUSTOM: showSummary param, passed to article-link/simple.html. Otherwise mirrors blowfish v3.10.0 */}}
 {{ $showSummary := .Get "showSummary" | default (.Page.Params.showSummary | default (.Site.Params.list.showSummary | default false)) }}
-
 <h2 class="mt-20 text-2xl font-extrabold mb-10">{{ $title }}</h2>
 
 {{ if $cardView | default false }}
