@@ -18,6 +18,6 @@ When I’m not tinkering with boards or debugging code, I’m probably experimen
 - **Development Tools**: STM32CubeIDE, Keil µVision, Docker, Kubernetes, Git, ROS2, Rviz, Gazebo, Vivado  
 
 ## Download
-{{< button href="/files/resume.pdf" target="_blank" >}}  
+{{< button href="https://drive.google.com/file/d/13YSFHSR2SeXgRm5nxFmvYlWLsaf-CtPu/view?usp=sharing" target="_blank" >}}  
 Download PDF version 
 {{< /button >}}  
