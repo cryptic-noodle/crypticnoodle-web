@@ -16,7 +16,7 @@ tags: ["self-hosted", "FOSS", "software"]
 ## Software
 
 ### Cross-Platfrom 
-- [Bitwarden](https://myvaultwarden.fly.dev/) - Password Manager {{< keyline >}} FOSS {{< /keyline >}}
+- [Bitwarden](https://vault.misabar.com/) - Password Manager {{< keyline >}} FOSS {{< /keyline >}}
 - [VLC](https://www.videolan.org/vlc/) - Media Player {{< keyline >}} FOSS {{< /keyline >}}
 - [Tailscale](https://tailscale.com/) - Mesh Wireguard VPN 
 - [Readest](https://readest.com/) - Ebook Reader {{< keyline >}} FOSS {{< /keyline >}}

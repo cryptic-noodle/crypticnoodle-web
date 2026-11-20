@@ -30,7 +30,7 @@ Yes it’s still a work in progress, but it was super easy to set up all thanks 
 There’s also an RSS feed for the blog that you can subscribe, to automatically get my future posts, using an [rss reader](https://github.com/ReadYouApp/ReadYou) ( if you're into that stuff :upside_down_face:)
 
 ```md
-https://crypticnoodle.work/posts/index.xml
+https://www.misabar.com/posts/index.xml
 ```
 
 ## Future??
