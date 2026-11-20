@@ -2,6 +2,7 @@
 title: "/resume"
 layout: "simple"
 sharingLinks: false
+showComments: false
 ---
 
 ## 🧑‍💻 About Me

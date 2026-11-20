@@ -2,6 +2,7 @@
 title: "/about"
 layout: "simple"
 sharingLinks: false
+showComments: false
 ---
 
 {{< lead >}}
